@@ -1,0 +1,30 @@
+<?php
+//$ID$
+
+/**
+ * @file
+ * Custom Functions
+ */
+function mymodule_form_alter(&$form, &$form_state, $form_id) {
+    #krumo($form_id);
+    #print_r($form_id);
+    #print '<pre>';
+    #print_r($form);
+    #print '</pre>';
+    if($form_id == 'transcription_node_form'){
+        #debug($form_id);  
+	print_r($form_id);
+        print '<pre>';
+        print_r($form);
+        print '</pre>';
+	$form['options']['#title'] = 'Pubblishing Options';
+	$form['options']['status']['#default_value'] = 1;
+	#$openall_button = newt_button(30,25, "Open All");
+	#newt_form_add_component($form, $openall_button);
+	echo "Hello";
+	echo "";
+	echo "";
+	#exit;
+	}
+
+}

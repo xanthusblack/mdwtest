@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the exported_features2 feature.
+ */
+
+include_once 'exported_features2.features.inc';

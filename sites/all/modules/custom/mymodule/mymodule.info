@@ -1,0 +1,4 @@
+name = mymodule
+description = Custom Function for always checking published check box for content types
+package = Custom
+core = 7.x
